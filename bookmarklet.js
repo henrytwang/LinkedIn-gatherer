@@ -5,8 +5,21 @@
 //$('a.trk-profile-name').each(function(index, value) {
 //  console.log($(this).text());
 //});
+
+var contents = '';
+
 $('div.result-data').each(function(index, value) {
-  console.log($(this).find('a.trk-profile-name').text());
-  console.log($(this).find('span.current-details').text());
-  console.log($(this).find('span.current-details.more-text').text());
+  var name = $(this).find('a.trk-profile-name').text();
+  var occupation = $(this).find('span.current-details').text();
+  var occupation2 = $(this).find('span.current-details.more-text').text();
+  contents = contents + name + ',' + occupation + ',' + occupation2 + "\n";
 });
+
+function popUp(){
+    var newWindow = window.open("","Test","width=300,height=300,scrollbars=1,resizable=1");
+    newWindow.document.open();
+    newWindow.document.write(html);
+    newWindow.document.close();
+}
+    
+popUp();
