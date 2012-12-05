@@ -6,5 +6,6 @@
 //  console.log($(this).text());
 //});
 $('div.result-data').each(function(index, value) {
-  console.log($(this).text());
+  console.log($(this).find('a.trk-profile-name').text());
+  console.log($(this).find('span.current-details.more-text').text());
 });
