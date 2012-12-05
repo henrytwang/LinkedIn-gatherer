@@ -18,7 +18,7 @@ $('div.result-data').each(function(index, value) {
 function popUp(){
     var newWindow = window.open("","Test","width=300,height=300,scrollbars=1,resizable=1");
     newWindow.document.open();
-    newWindow.document.write(html);
+    newWindow.document.write(contents);
     newWindow.document.close();
 }
     
