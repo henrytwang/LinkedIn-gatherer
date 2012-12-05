@@ -12,7 +12,7 @@ $('div.result-data').each(function(index, value) {
   var name = $(this).find('a.trk-profile-name').text();
   var occupation = $(this).find('span.current-details').text();
   var occupation2 = $(this).find('span.current-details.more-text').text();
-  contents = contents + name + ',' + occupation + ',' + occupation2 + "\n";
+  contents = contents + name + ',' + occupation + ',' + occupation2 + "<br />\n";
 });
 
 function popUp(){
