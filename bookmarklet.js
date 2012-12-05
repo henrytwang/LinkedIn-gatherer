@@ -13,7 +13,8 @@ $('div.result-data').each(function(index, value) {
   var occupation = $(this).find('span.current-details').text();
   var occupation2 = $(this).find('span.current-details.more-text');
   if (occupation2.text()) {
-    occupation = occupation2.find('a').remove().parent().text();
+    occupation2.find('a').remove();
+    occupation = occupation2.text();
   }
   contents = contents + name + ',' + occupation + "<br />\n";
 });
