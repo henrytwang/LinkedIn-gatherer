@@ -16,7 +16,7 @@ $('div.result-data').each(function(index, value) {
     occupation2.find('a').remove();
     occupation = occupation2.text();
   }
-  contents = contents + name + ',' + occupation + "<br />\n";
+  contents = contents + '"' + name + '","' + occupation + '"' + "<br />\n";
 });
 
 function popUp(){
