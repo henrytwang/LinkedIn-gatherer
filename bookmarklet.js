@@ -6,7 +6,7 @@
 //  console.log($(this).text());
 //});
 $('div.result-data').each(function(index, value) {
-  clear();
+  console._commandLineAPI.clear();
   console.log($(this).find('a.trk-profile-name').text());
   console.log($(this).find('span.current-details.more-text').text());
 });
