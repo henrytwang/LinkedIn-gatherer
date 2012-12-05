@@ -11,9 +11,10 @@ var contents = '';
 $('div.result-data').each(function(index, value) {
   var name = $(this).find('a.trk-profile-name').text();
   var occupation = $(this).find('span.current-details').text();
-  var occupation2 = $(this).find('span.current-details.more-text').text();
-  if (occupation2 && occupation2 !== '')
-    occupation = occupation2;
+  var occupation2 = $(this).find('span.current-details.more-text');
+  if (occupation2) {
+    occupation = occupation2.find('a').remove().parent().text();
+  }
   contents = contents + name + ',' + occupation + "<br />\n";
 });
 
