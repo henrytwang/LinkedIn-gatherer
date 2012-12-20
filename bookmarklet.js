@@ -29,5 +29,5 @@ function popUp(){
 popUp();
 
 $(document).ready(function(){
-  $('yui-gen885').trigger('click');
+  $('yui-gen885').click();
 });
