@@ -1,7 +1,7 @@
 LI-gatherer
 ========
 
-Needed to gather some data from LinkedIn search and here's the result.
+Capture lead information (Name, Company, Position) from LinkedIn search results.
 
 Installation
 ------------
